@@ -1,0 +1,2 @@
+add_executable(TestProject Main.cpp)
+target_link_libraries(TestProject ResourceSubsystem)
