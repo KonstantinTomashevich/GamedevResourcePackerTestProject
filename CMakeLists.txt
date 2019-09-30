@@ -5,10 +5,10 @@ execute_process(COMMAND "${ResourcePackerDir}/GamedevResourcePacker${CMAKE_EXECU
         "${CMAKE_BINARY_DIR}/bin/Assets" "${CMAKE_BINARY_DIR}/Generated/ResourceSubsystem"
         WORKING_DIRECTORY "${ResourcePackerDir}"
         RESULT_VARIABLE RPResult
-        OUTPUT_FILE "${CMAKE_SOURCE_DIR}/ResourcePacker.log")
+        OUTPUT_FILE "${CMAKE_BINARY_DIR}/ResourcePacker.log")
 
 if (RPResult)
-    message(FATAL_ERROR "Resource packer failed. See ResourcePacker.log.")
+    message(FATAL_ERROR "Resource packer failed with code ${RPResult}. See ResourcePacker.log.")
 else ()
     message(STATUS "Resource packer executed!")
 endif ()
