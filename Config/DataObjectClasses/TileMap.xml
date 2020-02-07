@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" ?>
 <class name="TileMap">
-    <field name="mapWidth" typeName="int" array="false" reference="false" readonly="true"/>
-    <field name="mapHeight" typeName="int" array="false" reference="false" readonly="true"/>
-    <field name="tiles" typeName="Tile" array="true" reference="false" readonly="true"/>
-    <field name="objects" typeName="MapObject" array="true" reference="false" readonly="true"/>
-    <field name="tileSet" typeName="TileSet" array="false" reference="true" readonly="true"/>
-    <field name="objectSet" typeName="MapObjectSet" array="false" reference="true" readonly="true"/>
+  <field name="mapWidth" typeName="int" reference="false" array="false" readonly="true"></field>
+  <field name="mapHeight" typeName="int" reference="false" array="false" readonly="true"></field>
+  <field name="tiles" typeName="Tile" reference="false" array="true" readonly="true"></field>
+  <field name="objects" typeName="MapObject" reference="false" array="true" readonly="true"></field>
+  <field name="tileSet" typeName="TileSet" reference="true" array="false" readonly="true"></field>
+  <field name="objectSet" typeName="MapObjectSet" reference="true" array="false" readonly="true"></field>
 </class>
